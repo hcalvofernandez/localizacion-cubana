@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="account.fiscal.position.template" id="fp_nacional">
+        <field name="name">Régimen Nacional Tributario</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.fiscal.position.tax.template" id="fptt_sale_10">
+        <field name="position_id" ref="fp_nacional"/>
+        <field name="tax_src_id" ref="tax_10"/>
+        <field name="tax_dest_id" ref="tax_10"/>
+    </record>
+
+    <record model="account.fiscal.position.account.template" id="fpat_extra_acc_1">
+        <field name="position_id" ref="fp_nacional"/>
+        <field name="account_src_id" ref="account_template_cu_900000"/>
+        <field name="account_dest_id" ref="account_template_cu_900990"/>
+    </record>
+
+</odoo>

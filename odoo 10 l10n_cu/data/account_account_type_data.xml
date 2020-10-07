@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tipos de cuenta nuevos -->
+    <record model="account.account.type" id="account.data_account_type_other_assets">
+        <field name="name">Other Assets</field>
+        <field name="type">other</field>
+        <field name="include_initial_balance" eval="True"/>
+    </record>
+
+    <record model="account.account.type" id="account.data_account_type_other_liabilities">
+        <field name="name">Other Liabilities</field>
+        <field name="type">other</field>
+        <field name="include_initial_balance" eval="True"/>
+    </record>
+
+</odoo>

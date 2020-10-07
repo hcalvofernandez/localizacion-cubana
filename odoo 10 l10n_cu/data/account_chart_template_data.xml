@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Plantillas de los planes contables - Asignación del resto de valores -->
+    <record model="account.chart.template" id="account_chart_template_cu_tcp">
+        <field name="property_account_receivable_id" ref="account_template_cu_135000"/>
+        <field name="property_account_payable_id" ref="account_template_cu_405000"/>
+        <field name="property_account_expense_categ_id" ref="account_template_cu_800000"/>
+        <field name="property_account_income_categ_id" ref="account_template_cu_900000"/>
+        <field name="income_currency_exchange_account_id" ref="account_template_cu_950000"/>
+        <field name="expense_currency_exchange_account_id" ref="account_template_cu_865000"/>
+        <field name="property_stock_valuation_account_id" ref="account_template_cu_189000"/>
+        <field name="property_stock_account_input_categ_id" ref="account_template_cu_189000"/>
+        <field name="property_stock_account_output_categ_id" ref="account_template_cu_189000"/>
+    </record>
+</odoo>

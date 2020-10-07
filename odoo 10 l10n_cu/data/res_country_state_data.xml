@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="res_country_state_cu_21" model="res.country.state">
+            <field name="name">PINAR DEL RÍO</field>
+            <field name="code">21</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_22" model="res.country.state">
+            <field name="name">ARTEMISA</field>
+            <field name="code">22</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_23" model="res.country.state">
+            <field name="name">LA HABANA</field>
+            <field name="code">23</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_24" model="res.country.state">
+            <field name="name">MAYABEQUE</field>
+            <field name="code">24</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_25" model="res.country.state">
+            <field name="name">MATANZAS</field>
+            <field name="code">25</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_26" model="res.country.state">
+            <field name="name">VILLA CLARA</field>
+            <field name="code">26</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_27" model="res.country.state">
+            <field name="name">CIENFUEGOS</field>
+            <field name="code">27</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_28" model="res.country.state">
+            <field name="name">SANCTI SPÍRITUS</field>
+            <field name="code">28</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_29" model="res.country.state">
+            <field name="name">CIEGO DE ÁVILA</field>
+            <field name="code">29</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_30" model="res.country.state">
+            <field name="name">CAMAGÜEY</field>
+            <field name="code">30</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_31" model="res.country.state">
+            <field name="name">LAS TUNAS</field>
+            <field name="code">31</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_32" model="res.country.state">
+            <field name="name">HOLGUÍN</field>
+            <field name="code">32</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_33" model="res.country.state">
+            <field name="name">GRANMA</field>
+            <field name="code">33</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_34" model="res.country.state">
+            <field name="name">SANTIAGO DE CUBA</field>
+            <field name="code">34</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_35" model="res.country.state">
+            <field name="name">GUANTÁNAMO</field>
+            <field name="code">35</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+
+        <record id="res_country_state_cu_401" model="res.country.state">
+            <field name="name">ISLA DE LA JUVENTUD</field>
+            <field name="code">401</field>
+            <field name="country_id" ref="base.cu" />
+        </record>
+    </data>
+</odoo>

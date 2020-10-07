@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem id="account_reports_cu_statements_menu" name="Cuban Statements" parent="account.menu_finance_reports" sequence="3" groups="account.group_account_user"/>
+
+        <!-- Plantillas de los planes contables -->
+
+        <record model="account.account.template" id="account_template_cu_699010">
+            <field name="name">Transitoria del Sistema Automatizado Activos</field>
+            <field name="code">699010</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="reconcile" eval="True"/>
+            <field name="note">699 - Transitoria del Sistema Automatizado</field>
+        </record>
+
+        <record model="account.chart.template" id="account_chart_template_cu_tcp">
+            <field name="name">NOMENCLADOR DE CUENTAS - CUBA - TCP</field>
+            <field name="code_digits">6</field>
+            <field name="cash_account_code_prefix">100</field>
+            <field name="bank_account_code_prefix">110</field>
+            <field name="currency_id" ref="base.CUP"/>
+            <field name="transfer_account_id" ref="account_template_cu_699010"/>
+        </record>
+
+        <record model="account.account.template" id="account_template_cu_699010">
+            <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+        </record>
+
+</odoo>

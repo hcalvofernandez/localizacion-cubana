@@ -1,0 +1,34 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#* l10n_cu_tcp
+#
+# Translators:
+# Hanoi Calvo <scnetisla@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-23 22:28+0000\n"
+"PO-Revision-Date: 2017-09-23 22:28+0000\n"
+"Last-Translator: Hanoi Calvo  <scnetisla@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/odoo/odoo-9/language/es/)\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cu_tcp
+#: model:account.tax,description:l10n_cu_tcp.1_tax_10
+msgid "10% Sobre las Ventas"
+msgstr "10% Sobre las Ventas"
+
+#. module: l10n_cu_tcp
+#: model:account.tax,name:l10n_cu_tcp.1_tax_10
+msgid "C_10"
+msgstr "C_10"
+
+#. module: l10n_cu_tcp
+#: model:ir.ui.menu,name:l10n_cu_tcp.account_reports_es_statements_menu
+msgid "Cuban Statements"
+msgstr "Cuban Statements"

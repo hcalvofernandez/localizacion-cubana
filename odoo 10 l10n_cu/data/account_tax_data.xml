@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Account Tax Tags -->
+        <record model="account.account.tag" id="tax_tag_10">
+            <field name="name">10% Sobre la Ventas</field>
+            <field name="applicability">taxes</field>
+        </record>
+
+        <!-- Ventas -->
+
+        <record model="account.tax.template" id="tax_10">
+            <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+            <field name="description">10% Sobre las Ventas</field>
+            <field name="name">C_10</field>
+            <field name="amount" eval="10.00"/>
+            <field name="amount_type">division</field>
+            <field name="price_include" eval="True"/>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" ref="account_template_cu_810100"/>
+            <field name="refund_account_id" ref="account_template_cu_810100"/>
+            <field name="tag_ids" eval="[(6,0,[ref('tax_tag_10')])]"/>
+        </record>
+
+</odoo>

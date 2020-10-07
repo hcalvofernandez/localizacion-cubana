@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Plantilla del árbol de cuentas del Plan Contable TCP.
+        Cuentas comunes.
+    -->
+
+    <record model="account.account.template" id="account_template_cu_699020">
+        <field name="name">Transitoria del Sistema Automatizado Pasivos</field>
+        <field name="code">699020</field>
+        <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">699 - Transitoria del Sistema Automatizado</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <!--<record model="account.account.template" id="account_template_cu_100000">-->
+        <!--<field name="name">Efectivo en Caja</field>-->
+        <!--<field name="code">100000</field>-->
+        <!--<field name="user_type_id" ref="account.data_account_type_liquidity"/>-->
+        <!--<field name="reconcile" eval="False"/>-->
+        <!--<field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>-->
+        <!--<field name="chart_template_id" ref="account_chart_template_cu_tcp"/>-->
+    <!--</record>-->
+
+    <!--<record model="account.account.template" id="account_template_cu_110000">-->
+        <!--<field name="name">Efectivo en Banco</field>-->
+        <!--<field name="code">110000</field>-->
+        <!--<field name="user_type_id" ref="account.data_account_type_liquidity"/>-->
+        <!--<field name="reconcile" eval="False"/>-->
+        <!--<field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>-->
+        <!--<field name="chart_template_id" ref="account_chart_template_cu_tcp"/>-->
+    <!--</record>-->
+
+    <record model="account.account.template" id="account_template_cu_135000">
+        <field name="name">Cuentas por Cobrar a Corto Plazo</field>
+        <field name="code">135000</field>
+        <field name="user_type_id" ref="account.data_account_type_receivable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_146000">
+        <field name="name">Pagos Anticipados</field>
+        <field name="code">146000</field>
+        <field name="user_type_id" ref="account.data_account_type_prepayments"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_183000">
+        <field name="name">Materias Primas y Materiales</field>
+        <field name="code">183000</field>
+        <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_187000">
+        <field name="name">Útiles, Herramientas y Otros</field>
+        <field name="code">187000</field>
+        <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_189000">
+        <field name="name">Mercancías para la Venta</field>
+        <field name="code">189000</field>
+        <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_190110">
+        <field name="name">Cuenta transitoria de inventarios(recbido)</field>
+        <field name="code">190110</field>
+        <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+     <record model="account.account.template" id="account_template_cu_190120">
+        <field name="name">Cuenta transitoria de inventarios(entregados)</field>
+        <field name="code">190120</field>
+        <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_200000">
+        <field name="name">Activos Fijos Tangibles</field>
+        <field name="code">200000</field>
+        <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS FIJOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_255000">
+        <field name="name">Activos Fijos Intangibles</field>
+        <field name="code">255000</field>
+        <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS FIJOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_265000">
+        <field name="name">Inversiones en Proceso</field>
+        <field name="code">265000</field>
+        <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - ACTIVOS FIJOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_300000">
+        <field name="name">Depreciación de Activos Fijos Tangibles</field>
+        <field name="code">300000</field>
+        <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - CUENTAS REGULADORAS DE ACTIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_330000">
+        <field name="name">Pérdidas en Investigación</field>
+        <field name="code">330000</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_334100">
+        <field name="name">Cuentas por Cobrar Diversas - Ventas a Entidades</field>
+        <field name="code">334100</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS - Operaciones Corrientes</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_334200">
+        <field name="name">Cuentas por Cobrar Diversas - Deudas a Trabajadores</field>
+        <field name="code">334200</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS - Operaciones Corrientes</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_334300">
+        <field name="name">Cuentas por Cobrar Diversas - Reclamaciones</field>
+        <field name="code">334300</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS - Operaciones Corrientes</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_334400">
+        <field name="name">Cuentas por Cobrar Diversas - Responsabilidad Material</field>
+        <field name="code">334400</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS - Operaciones Corrientes</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_334500">
+        <field name="name">Cuentas por Cobrar Diversas - Sector Cooperativo</field>
+        <field name="code">334500</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS - Operaciones Corrientes</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_334600">
+        <field name="name">Cuentas por Cobrar Diversas - Personas Naturales</field>
+        <field name="code">334600</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS - Operaciones Corrientes</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_334990">
+        <field name="name">Cuentas por Cobrar Diversas - Otros</field>
+        <field name="code">334990</field>
+        <field name="user_type_id" ref="account.data_account_type_other_assets"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE ACTIVOS - OTROS ACTIVOS - Operaciones Corrientes</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_405000">
+        <field name="name">Cuentas por Pagar a Corto Plazo</field>
+        <field name="code">405000</field>
+        <field name="user_type_id" ref="account.data_account_type_payable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_430000">
+        <field name="name">Cobros Anticipados</field>
+        <field name="code">430000</field>
+        <field name="user_type_id" ref="account.data_account_type_prepayments"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_440100">
+        <field name="name">Obligaciones con el Presupuesto del Estado - Impuesto sobre Ventas</field>
+        <field name="code">440100</field>
+        <field name="user_type_id" ref="account.data_account_type_payable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_440300">
+        <field name="name">Obligaciones con el Presupuesto del Estado - Impuesto sobre la Utilización de la Fuerza de
+            Trabajo
+        </field>
+        <field name="code">440300</field>
+        <field name="user_type_id" ref="account.data_account_type_payable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_440400">
+        <field name="name">Obligaciones con el Presupuesto del Estado - Constribucion a la Seguridad Social</field>
+        <field name="code">440400</field>
+        <field name="user_type_id" ref="account.data_account_type_payable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_440500">
+        <field name="name">Obligaciones con el Presupuesto del Estado - Otros Impuestos y Tasas</field>
+        <field name="code">440500</field>
+        <field name="user_type_id" ref="account.data_account_type_payable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_470000">
+        <field name="name">Préstamos Bancarios a Corto Plazo</field>
+        <field name="code">470000</field>
+        <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS CIRCULANTES</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_520000">
+        <field name="name">Préstamos Bancarios a Largo Plazo</field>
+        <field name="code">520000</field>
+        <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+        <field name="reconcile" eval="True"/>
+        <field name="note">GRUPO DE PASIVOS - PASIVOS A LARGO PLAZO</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_534100">
+        <field name="name">Cuentas por Pagar Diversas - A Entidades</field>
+        <field name="code">534100</field>
+        <field name="user_type_id" ref="account.data_account_type_other_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PASIVOS - OTROS PASIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_534200">
+        <field name="name">Cuentas por Pagar Diversas - A Trabajadores</field>
+        <field name="code">534200</field>
+        <field name="user_type_id" ref="account.data_account_type_other_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PASIVOS - OTROS PASIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_534300">
+        <field name="name">Cuentas por Pagar Diversas - Reclamaciones</field>
+        <field name="code">534300</field>
+        <field name="user_type_id" ref="account.data_account_type_other_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PASIVOS - OTROS PASIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_534400">
+        <field name="name">Cuentas por Pagar Diversas - Responsabilidad Material</field>
+        <field name="code">534400</field>
+        <field name="user_type_id" ref="account.data_account_type_other_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PASIVOS - OTROS PASIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_534500">
+        <field name="name">Cuentas por Pagar Diversas - Sector Cooperativo</field>
+        <field name="code">534500</field>
+        <field name="user_type_id" ref="account.data_account_type_other_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PASIVOS - OTROS PASIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_534600">
+        <field name="name">Cuentas por Pagar Diversas - Personas Naturales</field>
+        <field name="code">534600</field>
+        <field name="user_type_id" ref="account.data_account_type_other_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PASIVOS - OTROS PASIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_534990">
+        <field name="name">Cuentas por Pagar Diversas - Otros</field>
+        <field name="code">534990</field>
+        <field name="user_type_id" ref="account.data_account_type_other_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PASIVOS - OTROS PASIVOS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_600100">
+        <field name="name">Saldo al inicio del ejercicio</field>
+        <field name="code">600100</field>
+        <field name="user_type_id" ref="account.data_account_type_equity"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PATRIMONIO - Patrimonio del TCP</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_600200">
+        <field name="name">Incrementos de aportes del TCP en el ejercicio contable</field>
+        <field name="code">600200</field>
+        <field name="user_type_id" ref="account.data_account_type_equity"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PATRIMONIO - Patrimonio del TCP</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_600300">
+        <field name="name">Erogaciones efectuadas por el TCP en el ejercicio contable</field>
+        <field name="code">600300</field>
+        <field name="user_type_id" ref="account.data_account_type_equity"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PATRIMONIO - Patrimonio del TCP</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_600400">
+        <field name="name">Pagos de Cuotas del Impuesto sobre Ingresos Personales</field>
+        <field name="code">600400</field>
+        <field name="user_type_id" ref="account.data_account_type_equity"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PATRIMONIO - Patrimonio del TCP</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_600500">
+        <field name="name">Contribución a la Seguridad Social</field>
+        <field name="code">600500</field>
+        <field name="user_type_id" ref="account.data_account_type_equity"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PATRIMONIO - Patrimonio del TCP</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_610000">
+        <field name="name">Utilidad Retenida</field>
+        <field name="code">610000</field>
+        <field name="user_type_id" ref="account.data_account_type_equity"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PATRIMONIO</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_620000">
+        <field name="name">Pérdida</field>
+        <field name="code">620000</field>
+        <field name="user_type_id" ref="account.data_account_type_equity"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE PATRIMONIO</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_800000">
+        <field name="name">Gastos de Operación</field>
+        <field name="code">800000</field>
+        <field name="user_type_id" ref="account.data_account_type_expenses"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES DEUDORAS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_801000">
+        <field name="name">Costo de Producion y Servicios</field>
+        <field name="code">801000</field>
+        <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES DEUDORAS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_810100">
+        <field name="name">Impuesto sobre las Ventas</field>
+        <field name="code">810100</field>
+        <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES DEUDORAS - Impuestos y Tasas</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_810200">
+        <field name="name">Impuesto sobre los Servicios Públicos</field>
+        <field name="code">810200</field>
+        <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES DEUDORAS - Impuestos y Tasas</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_810300">
+        <field name="name">Impuesto por la Utilización de la Fuerza de Trabajo</field>
+        <field name="code">810300</field>
+        <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES DEUDORAS - Impuestos y Tasas</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_810400">
+        <field name="name">Otros Impuestos y Tasas</field>
+        <field name="code">810400</field>
+        <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES DEUDORAS - Impuestos y Tasas</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_865000">
+        <field name="name">Otros Gastos</field>
+        <field name="code">865000</field>
+        <field name="user_type_id" ref="account.data_account_type_expenses"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES DEUDORAS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_900000">
+        <field name="name">Ventas</field>
+        <field name="code">900000</field>
+        <field name="user_type_id" ref="account.data_account_type_revenue"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES ACREEDORAS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_900990">
+        <field name="name">Ventas Otros</field>
+        <field name="code">900990</field>
+        <field name="user_type_id" ref="account.data_account_type_revenue"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES ACREEDORAS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_950000">
+        <field name="name">Otros Ingresos</field>
+        <field name="code">950000</field>
+        <field name="user_type_id" ref="account.data_account_type_other_income"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">GRUPO DE CUENTAS NOMINALES - CUENTAS NOMINALES ACREEDORAS</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+    <record model="account.account.template" id="account_template_cu_999000">
+        <field name="name">Resultado</field>
+        <field name="code">999000</field>
+        <field name="user_type_id" ref="account.data_unaffected_earnings"/>
+        <field name="reconcile" eval="False"/>
+        <field name="note">CUENTA DE CIERRE</field>
+        <field name="chart_template_id" ref="account_chart_template_cu_tcp"/>
+    </record>
+
+</odoo>

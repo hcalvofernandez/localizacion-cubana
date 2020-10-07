@@ -1,0 +1,9 @@
+-
+    Update Default Currency
+-
+    !python {model: res.currency}: |
+        currencies = self.search([('active','=',True)])
+        for currency in currencies:
+            currency.write({'active': False})
+        cup = self.env.ref('base.CUP')
+        cup.active = True
